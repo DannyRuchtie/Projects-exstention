@@ -1,0 +1,28 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "css": [ "styles.css" ],
+      "js": [ "content.js" ],
+      "matches": [ "https://github.com/*", "https://codesandbox.io/*", "https://codesandbox.test/*", "https://codesandbox.stream/*", "https://*.build.csb.dev/*" ]
+   } ],
+   "description": "Quickly import repositories in to CodeSandbox Projects. This extentions adds an 'Open in CodeSandbox Projects' button to GitHub repos",
+   "homepage_url": "https://codesandbox.io",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAljPVoomIyuTOJ5t7H8zglwln6LpW6UyN/vmxAgPi86/eGrZaO9DqFrL+2WnFOFApDvCRUI6IEr3JAA5QVJwqTxphyG+VQQTAH5vjgEvlainkjr8xwh0QAbj6eWvOIsr9NZjXtmiaqDS5aKpd1xAlWRG4XtQ3fW0eOlsF0AdKsYdFhvOemhD7JNvD6v30KhmEALME8uQ6DcbKJ2cCS+s6Med+WB9f2/557g0A1h+e3xLqdMZi1IFc9jHu5aczyAN3dhFijtH4enRHcy3Mb6V20O7rIj3gP+nPXmBT8w/7RJrfPjUMPqQj3gPEQ/cZeTC/JxM9YbbLfChBm4+YfK4XyQIDAQAB",
+   "manifest_version": 2,
+   "name": "CodeSandbox",
+   "permissions": [ "\u003Call_urls>" ],
+   "short_name": "CodeSandbox",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2"
+}
